@@ -1,0 +1,11 @@
+package com.cmc.evaluacion.fase2.servicios;
+
+import java.io.File;
+import java.io.FileReader;
+
+public class AdminClientes {
+	public static Cartera armarCartera(String ruta){
+		File file = new File(ruta);
+
+	}
+}

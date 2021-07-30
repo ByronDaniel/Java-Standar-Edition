@@ -1,0 +1,23 @@
+package com.cmc.evaluacion.fase2.servicios;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+//Checked - Exception > IOException
+//Unchecked - RuntimeException 
+public class AdminClientes {
+	public static Cartera armarCartera(String ruta){
+		File file = new File(ruta);
+		BufferedReader br = null;
+		FileReader fileReader = null;
+		
+		try{
+			
+		}catch(){
+			
+		}
+		
+	
+		
+	}
+}

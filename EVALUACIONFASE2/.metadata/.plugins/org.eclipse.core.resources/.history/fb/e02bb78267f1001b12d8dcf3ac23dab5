@@ -1,0 +1,22 @@
+package com.cmc.evaluacion.fase2.entidades;
+
+public class Cliente {
+	private String cedula;
+	private String nombre;
+	private String apellido;
+	public Cliente(String cedula, String nombre, String apellido) {
+		this.cedula = cedula;
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+	
+	public String getCedula() {
+		return cedula;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+	}
+	
+}

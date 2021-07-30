@@ -1,0 +1,14 @@
+package com.cmc.commons.util;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateUtil {
+	private static final String PATRON = "yyyy/MM/dd";
+	public static Date convertir(String date) throws ParseException{
+		SimpleDateFormat simpleDate = new SimpleDateFormat();
+		Date fecha = simpleDate.parse(date,PATRON);
+		return fecha;
+	}
+}
