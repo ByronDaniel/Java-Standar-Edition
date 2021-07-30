@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.cmc.flujo.Validator"/>
+<fullyQualifiedTypeName name="com.cmc.admin.AdminProducto"/>
+<fullyQualifiedTypeName name="com.cmc.entidades.Direccion"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="com.cmc.directorio.entidades.Contacto"/>
+<fullyQualifiedTypeName name="com.cmc.directorio.entidades.Telefono"/>
+<fullyQualifiedTypeName name="com.cmc.directorio.entidades.AdminContactos"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSeparatorUI"/>
+<fullyQualifiedTypeName name="com.cmc.directorio.entidades.AdminTelefono"/>
+<fullyQualifiedTypeName name="com.clearminds.componentes.Celda"/>
+<fullyQualifiedTypeName name="com.cmc.entidades.Persona"/>
+<fullyQualifiedTypeName name="com.cmc.colecciones.AdminPersona"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.cmc.entidades.Cliente"/>
+<fullyQualifiedTypeName name="com.cmc.arreglos.AdminContactos"/>
+<fullyQualifiedTypeName name="com.cmc.test.TestDirectorioLista"/>
+<fullyQualifiedTypeName name="com.cmc.colecciones.DirectorioLista"/>
+<fullyQualifiedTypeName name="com.cmc.entidades.Contacto"/>
+<fullyQualifiedTypeName name="com.cmc.colecciones.Directorio"/>
+<fullyQualifiedTypeName name="com.cmc.entidades.Telefono"/>
+<fullyQualifiedTypeName name="com.cmc.colecciones.DirectorioArreglo"/>
+<fullyQualifiedTypeName name="com.cmc.estaticos.Util"/>
+<fullyQualifiedTypeName name="com.cmc.estaticos.DiasSemana"/>
+<fullyQualifiedTypeName name="com.cmc.util.Dado"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.log4j.LogManager"/>
+<fullyQualifiedTypeName name="java.util.logging.LogManager"/>
+<fullyQualifiedTypeName name="com.cmc.calificaciones.servicios.AdminEstudiante"/>
+<fullyQualifiedTypeName name="com.cmc.calificaciones.entidades.Estudiante"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.cmc.excepciones.UncheckedException"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.internal.LogManagerStatus"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+<fullyQualifiedTypeName name="com.cmc.excepciones.ToxicaException"/>
+<fullyQualifiedTypeName name="com.cmc.archivos.ManejadorArchivos"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+</qualifiedTypeNameHistroy>

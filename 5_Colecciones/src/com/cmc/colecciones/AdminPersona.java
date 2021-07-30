@@ -15,16 +15,14 @@ public class AdminPersona {
 	}
 	
 	public void imprimir(){
-		for(int i = 0; i<personas.size();i++){
-			Persona per = personas.get(i);
+		for(Persona per : personas){
 			System.out.println(per.getNombre()+" "+per.getEdad());
 		}
 	}
 	//retorna la persona si coicide, caso contrario retorna null
 	public Persona buscar(String nombre){
-		Persona per;
-		for(int i = 0; i<personas.size();i++){
-			per= personas.get(i);
+
+		for(Persona per : personas){
 			if(per.getNombre().equals(nombre)){
 				return per;
 			}
@@ -33,9 +31,7 @@ public class AdminPersona {
 	}
 	
 	public Persona buscarEdad(int edad){
-		Persona per;
-		for(int i = 0; i<personas.size();i++){
-			per= personas.get(i);
+		for(Persona per : personas){
 			if(per.getEdad() == edad){
 				return per;
 			}
@@ -44,11 +40,9 @@ public class AdminPersona {
 	}
 	public ArrayList<Persona> buscaMayores(int edad){
 		ArrayList<Persona> personasMayores = new ArrayList<Persona>();
-		Persona p;
-		for(int i = 0; i<personas.size();i++){
-			p = personas.get(i);
-			if(p.getEdad()>edad){
-				personasMayores.add(p);
+		for(Persona per : personas){
+			if(per.getEdad()>edad){
+				personasMayores.add(per);
 			}
 		}
 		return personasMayores;

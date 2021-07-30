@@ -1,0 +1,13 @@
+package com.cmc.test;
+
+import com.cmc.entidades.Contacto;
+
+public class TestContacto1 {
+
+	public static void main(String[] args) {
+		Contacto contacto = new Contacto();
+		contacto.
+
+	}
+
+}

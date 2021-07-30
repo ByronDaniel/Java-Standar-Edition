@@ -1,0 +1,32 @@
+package com.clearminds.componentes;
+
+public class Producto {
+	private String nombre;
+	private double precio;
+	private String codigo;
+	
+
+	public Producto(String nombre, double precio, String codigo) {
+		this.nombre = nombre;
+		this.precio = precio;
+		this.codigo = codigo;
+	}
+
+	//PROBAR
+	public void incrementarPrecio(int porcentajeIncremento){
+		if(porcentajeIncremento>0){
+			double porcentaje = precio*(porcentajeIncremento/100);
+			precio += porcentaje;
+		}else{
+			System.out.println("El porcentaje de descuento debe ser mayor a 0.");
+		}
+	}
+	
+	public void disminuirPrecio(double valorDescuento){
+		if(valorDescuento<=precio){			
+			precio-=valorDescuento;
+		}else{
+			System.out.println("El valor de descuento es mayor al precio del producto");
+		}
+	}
+}

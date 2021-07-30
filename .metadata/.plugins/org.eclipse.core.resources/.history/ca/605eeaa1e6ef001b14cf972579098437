@@ -1,0 +1,27 @@
+package com.clearminds.test;
+
+import com.clearminds.componentes.Celda;
+import com.clearminds.componentes.Producto;
+import com.clearminds.maquina.MaquinaDulces;
+
+public class TestVender {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Celda celda=new Celda("A");
+		Celda celda2=new Celda("B");
+		MaquinaDulces maquina=new MaquinaDulces();
+		
+		Producto producto=new Producto("123","Helado de chocolate",0.50);
+		maquina.cargarProducto(producto, "A", 2);
+		
+		Producto producto2=new Producto("23a","Manzana",0.70);
+		maquina.cargarProducto(producto2, "B", 3);
+		
+		maquina.vender("A");
+		maquina.vender("B");
+		
+		maquina.mostrarProductos();
+	}
+
+}

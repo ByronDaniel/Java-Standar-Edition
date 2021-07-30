@@ -1,0 +1,35 @@
+package com.cmc.test;
+
+import com.cmc.colecciones.DirectorioLista;
+import com.cmc.entidades.Contacto;
+
+public class TestDirectorioLista {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DirectorioLista dl = new DirectorioLista();
+		// Agregar contactos
+		
+		dl.agregarContacto(new Contacto("1751592013", "Daniel", "Delgado"));
+		dl.agregarContacto(new Contacto("1234234234", "Edwin", "Guerrero"));
+		dl.agregarContacto(new Contacto("1752314352", "Elias", "Medina"));
+		dl.agregarContacto(new Contacto("1751523423", "Alex", "Landa"));
+		dl.agregarContacto(new Contacto("1751234234", "Andres", "Carpio"));
+		// No agrega contacto con cedula repetida
+		dl.agregarContacto(new Contacto("1751234234", "AndresRepetido", "CarpioRepetido"));
+
+		dl.imprimir();
+		// Buscar contacto
+		System.out.println("**********Buscar contacto con la cédula 1751592013 ");
+		Contacto contactoEncontrado = dl.buscarContacto("1751592013");
+		System.out.println(contactoEncontrado);
+		
+		// Eliminar contacto
+		System.out.println("**********Eliminar contacto con la cédula 1234234234");
+		Contacto contactoEliminado = dl.eliminarContacto("1234234234");
+		System.out.println(contactoEliminado);
+		System.out.println("**********Lista actualizada");
+		dl.imprimir();
+	}
+
+}

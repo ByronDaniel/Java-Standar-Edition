@@ -34,9 +34,9 @@ public class MaquinaDulces {
 
 	public Celda buscarCelda(String codigoCelda) {
 		Celda[] celdas = { celda1, celda2, celda3, celda4 };
-		for (int i = 0; i < celdas.length; i++) {
-			if (celdas[i].getCodigo().equals(codigoCelda)) {
-				return celdas[i];
+		for (Celda celda : celdas) {
+			if (celda.getCodigo().equals(codigoCelda)) {
+				return celda;
 			}
 		}
 		return null;
@@ -50,14 +50,14 @@ public class MaquinaDulces {
 
 	public void mostrarProductos() {
 		Celda[] celdas = { celda1, celda2, celda3, celda4 };
-		for (int i = 0; i < celdas.length; i++) {
-			System.out.println("********* CELDA " + celdas[i].getCodigo());
-			System.out.println("Stock:" + celdas[i].getStock());
+		for (Celda celda : celdas) {
+			System.out.println("********* CELDA " + celda.getCodigo());
+			System.out.println("Stock:" + celda.getStock());
 
-			if (celdas[i].getProducto() != null) {
-				System.out.println("Nombre Producto:" + celdas[i].getProducto().getNombre());
-				System.out.println("Precio Producto:" + celdas[i].getProducto().getPrecio());
-				System.out.println("Código Producto:" + celdas[i].getProducto().getCodigo());
+			if (celda.getProducto() != null) {
+				System.out.println("Nombre Producto:" + celda.getProducto().getNombre());
+				System.out.println("Precio Producto:" + celda.getProducto().getPrecio());
+				System.out.println("Código Producto:" + celda.getProducto().getCodigo());
 			} else {
 				System.out.println("La celda no tiene producto!!!");
 			}
@@ -81,10 +81,10 @@ public class MaquinaDulces {
 
 	public Celda buscarCeldaProducto(String codigoProducto) {
 		Celda[] celdas = { celda1, celda2, celda3, celda4 };
-		for (int i = 0; i < celdas.length; i++) {
-			if (celdas[i].getProducto() != null) {
-				if (celdas[i].getProducto().getCodigo().equals(codigoProducto)) {
-					return celdas[i];
+		for (Celda celda : celdas) {
+			if (celda.getProducto() != null) {
+				if (celda.getProducto().getCodigo().equals(codigoProducto)) {
+					return celda;
 				}
 			}
 		}

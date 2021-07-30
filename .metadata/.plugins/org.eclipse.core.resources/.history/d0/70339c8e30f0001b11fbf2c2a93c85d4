@@ -1,0 +1,54 @@
+package com.cmc.colecciones;
+
+import java.util.ArrayList;
+
+import com.cmc.entidades.Contacto;
+
+public class DirectorioLista extends Directorio{
+	public static void main(String[] args) {
+		
+//		
+		Contacto contacto = new Contacto("1751592013","Daniel","Delgado");
+		
+		DirectorioLista dl = new DirectorioLista();
+		dl.agregarContacto(contacto);
+	}
+	ArrayList<Contacto> contactos;
+	public DirectorioLista(){
+		contactos = new ArrayList<Contacto>();
+	}
+	public void agregarContacto(Contacto contacto) {
+		if(!contactos.contains(contacto.getCedula())){
+			contactos.add(contacto);			
+		}
+		System.out.println(contactos.size());
+		/*Contacto contactoNuevo;
+		
+		for(int i = 0; i < contactos.size(); i++){
+			contactoNuevo = contactos.get(i);
+			if(contactoNuevo.getCedula().equals(contacto.getCedula())){
+				existeEnLista = true;
+				break;
+			}
+		}
+		if(existeEnLista == false){
+			contactos.add(contacto);
+		}*/
+	}
+
+	public Contacto buscarContacto(String cedula) {
+		Contacto contacto;
+		for(int i = 0; i<contactos.size();i++){
+			contacto = contactos.get(i);
+			if(contacto.getCedula().equals(cedula)){
+				return contacto;
+			}
+		}
+		return null;
+	}
+	
+	public Contacto eliminarContacto(String cedula) {
+		contactos.contains(cedula);
+	}
+	
+}

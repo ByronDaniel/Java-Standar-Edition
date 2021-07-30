@@ -12,9 +12,7 @@ public class DirectorioLista extends Directorio{
 	
 	public void agregarContacto(Contacto contacto) {
 		boolean existeContacto = false;
-		Contacto contactoRecorrido;
-		for(int i = 0; i<contactos.size(); i++){
-			contactoRecorrido = contactos.get(i);
+		for(Contacto contactoRecorrido: contactos){
 			if(contactoRecorrido.getCedula().equals(contacto.getCedula())){
 				existeContacto = true;
 				break;
@@ -26,9 +24,7 @@ public class DirectorioLista extends Directorio{
 	}
 	
 	public Contacto buscarContacto(String cedula) {
-		Contacto contacto;
-		for(int i = 0; i<contactos.size();i++){
-			contacto = contactos.get(i);
+		for(Contacto contacto: contactos){
 			if(contacto.getCedula().equals(cedula)){
 				return contacto;
 			}

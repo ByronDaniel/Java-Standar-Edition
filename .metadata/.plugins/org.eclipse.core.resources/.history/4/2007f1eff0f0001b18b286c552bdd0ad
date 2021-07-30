@@ -1,0 +1,18 @@
+package com.cmc.test;
+
+import com.cmc.archivos.ManejadorArchivos;
+import com.cmc.excepciones.ToxicaException;
+
+public class TestManejador {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ManejadorArchivos ma = new ManejadorArchivos("C:\\Users\\Byron Daniel\\Documents\\ejemplo.txt");
+		try {
+			ma.leer();
+		} catch (ToxicaException e) {
+			System.out.println("No se puede leer"+e.getMessage());
+		}
+	}
+
+}

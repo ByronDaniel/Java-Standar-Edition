@@ -28,10 +28,9 @@ public class TestContactos {
 		System.out.println(cantidadContactos);
 		
 		ac.eliminar("163");
+		ac.eliminar("163");
 		
-		Contacto contacto1;
-		for(int i = 0; i<ac.getContactos().length; i++){
-			contacto1=ac.getContactos()[i];
+		for(Contacto contacto1:ac.getContactos()){
 			System.out.println(contacto1);
 		}
 	}

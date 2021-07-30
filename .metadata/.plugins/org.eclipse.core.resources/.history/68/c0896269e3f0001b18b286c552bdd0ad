@@ -1,0 +1,23 @@
+package com.cmc.excepciones;
+
+import java.io.File;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		public void metodo1(){
+			File file = new File("miArchivo.txt");
+			try{				
+				file.createNewFile();
+			}catch (Exception e){
+				
+			}
+		}
+		public void  metodo2(){
+			File file = new File("archivo.txt");
+			file.createNewFile(
+		}
+	}
+
+}

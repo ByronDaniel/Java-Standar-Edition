@@ -1,0 +1,17 @@
+package com.cmc.test;
+
+import com.cmc.colecciones.DirectorioLista;
+import com.cmc.entidades.Contacto;
+
+public class TestDirectorioLista {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DirectorioLista dl = new DirectorioLista();
+		// Agregar contacto
+		
+		dl.agregarContacto(new Contacto("1751592013", "Daniel", "Delgado"));
+		dl.imprimir();
+	}
+
+}

@@ -16,11 +16,8 @@ public class Ejemplo2 {
 		int tamaño = lista.size();
 		System.out.println("tamaño del arreglo:"+tamaño);
 		
-		String cadena = null;
-		for(int i = 0; i<lista.size(); i++){
-			cadena = lista.get(i);
+		for(String cadena: lista){
 			System.out.println("valor: "+cadena);
-
 		}
 	}
 

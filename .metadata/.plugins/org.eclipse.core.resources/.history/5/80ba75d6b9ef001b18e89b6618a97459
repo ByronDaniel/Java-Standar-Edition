@@ -1,0 +1,13 @@
+package com.cmc.test;
+
+import com.cmc.entidades.Estudiante;
+
+public class TestEstudiante {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Estudiante est = new Estudiante("174515660","Daniel");
+		est.imprimir();
+	}
+
+}

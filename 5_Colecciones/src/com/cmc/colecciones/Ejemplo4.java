@@ -12,8 +12,8 @@ public class Ejemplo4 {
 		Persona p = new Persona("Luis",15);
 		personas.add(p);
 		System.out.println(personas.size());
-		for(int i = 0; i<personas.size();i++){
-			Persona per = personas.get(i);
+		
+		for(Persona per : personas){
 			System.out.println(per.getNombre()+" "+per.getEdad());
 		}
 		

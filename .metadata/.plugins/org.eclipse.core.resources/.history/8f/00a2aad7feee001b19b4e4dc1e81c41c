@@ -1,0 +1,16 @@
+public class Auto {
+	private String marca;
+	private double precio;
+	private int anio = 0;
+	
+	public Auto(){
+		
+	}
+	public Auto(String marca, double precio){
+		this.marca = marca;
+		this.precio = precio;		
+	}
+	public Auto(String marca){
+		this.marca = marca;
+	}
+}

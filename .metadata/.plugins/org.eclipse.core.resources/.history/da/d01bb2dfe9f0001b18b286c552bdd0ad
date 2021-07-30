@@ -1,0 +1,15 @@
+package com.cmc.excepciones;
+
+public class Ejercicio6 {
+	public static void main(String[] args) {	
+		Cuenta c = new Cuenta();
+		try{		
+			String a = null;
+			a.toString();
+			c.depositar(-100);
+			
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+	}
+}

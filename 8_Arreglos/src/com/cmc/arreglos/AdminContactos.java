@@ -38,9 +38,7 @@ public class AdminContactos {
 		}
 	}
 	public Contacto mostrarInformacion(String codigo){
-		Contacto contacto;
-		for(int i = 0; i<contactos.length; i++){
-			contacto = contactos[i];
+		for(Contacto contacto : contactos){
 			if(contacto.getCodigo().equals(codigo)){
 				return contacto;
 			}
@@ -51,11 +49,10 @@ public class AdminContactos {
 		Contacto contacto;
 		for(int i = 0; i<contactos.length; i++){
 			contacto = contactos[i];
-			if(contacto.getCodigo()!=null){
-				
-			if( contacto.getCodigo().equals(codigo)){
-				contacto = null;
-			}
+			if(contacto != null && contacto.getCodigo()!= null){	
+				if( contacto.getCodigo().equals(codigo)){
+					contactos[i] = null;
+				}
 			}
 		}
 

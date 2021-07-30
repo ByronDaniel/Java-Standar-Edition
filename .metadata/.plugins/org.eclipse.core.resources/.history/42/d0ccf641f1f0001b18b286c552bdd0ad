@@ -1,0 +1,23 @@
+package com.cmc.test;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.cmc.archivos.ManejadorArchivos;
+import com.cmc.excepciones.ToxicaException;
+
+public class TestManejador {
+	private static Logger logger = LogManager.getLogger(ManejadorArchivos.class);
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ManejadorArchivos ma = new ManejadorArchivos("C:\\Users\\Byron Daniel\\Documents\\ejempalo.txt");
+		try {
+			ma.leer();
+		} catch (ToxicaException e) {
+			logger.error("No existe el archivo",e);
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

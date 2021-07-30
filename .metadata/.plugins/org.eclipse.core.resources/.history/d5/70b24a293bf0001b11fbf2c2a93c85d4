@@ -1,0 +1,17 @@
+package com.cmc.test;
+
+import com.cmc.estaticos.DiasSemana;
+
+public class TestDiasSemana {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DiasSemana ds = new DiasSemana();
+		int valor = ds.MARTES;
+		System.out.println(valor);
+		
+		int miercoles = DiasSemana.MIERCOLES;
+		System.out.println(miercoles);
+	}
+
+}

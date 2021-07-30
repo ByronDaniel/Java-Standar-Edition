@@ -1,0 +1,19 @@
+package com.cmc.test;
+
+import com.cmc.entidades.Contacto;
+
+public class TestContactos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Contacto[] contactos = new Contacto[5];
+		contactos[0] = new Contacto("123", "Daniel");
+		contactos[1] = new Contacto("133", "Kevin");
+		contactos[2] = new Contacto("143", "Edwin");
+		contactos[3] = new Contacto("153", "Ramiro");
+		contactos[4] = new Contacto("163", "Paúl");
+		
+		System.out.println(contactos[5]);
+	}
+
+}

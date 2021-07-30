@@ -1,0 +1,9 @@
+package com.cmc.test;
+
+import java.util.HashMap;
+
+public class TestMapas {
+	public static void main(String[] args) {
+		 HashMap<String, String> mapas = new HashMap<String,String>();
+	}
+}

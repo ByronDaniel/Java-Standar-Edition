@@ -1,0 +1,12 @@
+
+public class TestCalcu {
+
+	public static void main(String[] args) {
+	
+		int resultado = 0;
+		Calculadora c1 = new Calculadora();
+		resultado = c1.sumar(3, 5);
+		System.out.println(resultado);
+	}
+
+}

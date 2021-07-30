@@ -1,0 +1,16 @@
+package com.cmc.colecciones;
+
+import java.util.ArrayList;
+
+import com.cmc.entidades.Persona;
+
+public class Ejemplo4 {
+	public static void main(String[] args) {
+		ArrayList<Persona> personas = new Persona();
+		personas.add(new Persona("Jhon",22));
+		personas.add(new Persona("María",15));
+		
+		System.out.println(personas.size());
+		
+	}
+}

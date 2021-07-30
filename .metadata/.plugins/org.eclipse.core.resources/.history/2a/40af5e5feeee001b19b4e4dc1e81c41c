@@ -1,0 +1,7 @@
+
+public class TestCalculadora {
+	public void main (String[]args){
+		int resultado = 0;
+		Calculadora c1 = new Calculadora();
+	}
+}

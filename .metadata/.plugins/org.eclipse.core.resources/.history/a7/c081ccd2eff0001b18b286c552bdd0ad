@@ -1,0 +1,10 @@
+package com.cmc.excepciones;
+
+public class ToxicaException extends Exception{
+
+	public No existe el archivo(String msg) {
+		super(msg);
+		
+	}
+	
+}

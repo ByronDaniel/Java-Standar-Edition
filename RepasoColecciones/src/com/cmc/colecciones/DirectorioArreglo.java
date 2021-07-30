@@ -12,10 +12,8 @@ public class DirectorioArreglo extends Directorio {
 	
 	public void agregarContacto(Contacto contacto) {
 		boolean existeContacto = false;
-		Contacto contactoRecorrido;
-		for(int i = 0; i<contactos.length; i++){
-			contactoRecorrido = contactos[i];
-			if(contactoRecorrido.getCedula().equals(contacto.getCedula())){
+		for(Contacto contact:contactos){
+			if(contact.getCedula().equals(contacto.getCedula())){
 				existeContacto = true;
 				break;
 			}
@@ -27,23 +25,19 @@ public class DirectorioArreglo extends Directorio {
 	}
 	
 	public Contacto buscarContacto(String cedula) {
-		Contacto contacto;
-		for(int i = 0; i<contactos.length;i++){
-			contacto = contactos[i];
-			if(contacto.getCedula().equals(cedula)){
-				return contacto;
+		for(Contacto contact:contactos){
+			if(contact.getCedula().equals(cedula)){
+				return contact;
 			}
 		}
 		return null;
 	}
 	
 	public Contacto eliminarContacto(String cedula) {
-		Contacto contacto;
-		for(int i = 0; i<contactos.length; i++){
-			contacto = contactos[i];
-			if(contacto.getCedula().equals(cedula)){
-				Contacto contactoEliminado = contacto;
-				contacto = null;
+		for(Contacto contact:contactos){
+			if(contact.getCedula().equals(cedula)){
+				Contacto contactoEliminado = contact;
+				contact = null;
 				return contactoEliminado;
 			}
 		}
@@ -51,10 +45,8 @@ public class DirectorioArreglo extends Directorio {
 	}
 
 	public void imprimir() {
-		Contacto contacto;
-		for(int i = 0; i<contactos.length;i++){
-			contacto = contactos[i];
-			System.out.println(contacto.toString());
+		for(Contacto contact:contactos){
+			System.out.println(contact.toString());
 		}
 	}
 }

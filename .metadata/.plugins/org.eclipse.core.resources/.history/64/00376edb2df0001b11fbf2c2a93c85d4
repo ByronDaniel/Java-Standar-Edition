@@ -1,0 +1,25 @@
+package com.cmc.colecciones;
+
+import java.util.ArrayList;
+
+import com.cmc.entidades.Contacto;
+
+public class DirectorioLista extends Directorio{
+	ArrayList<Contacto> contactos;
+	
+	
+	public void agregarContacto(Contacto contacto) {
+		boolean existeEnLista = false;
+		Contacto contactoNuevo;
+		for(int i = 0; i < contactos.size(); i++){
+			contactoNuevo = contactos.get(i);
+			if(contactoNuevo.getCedula().equals(contacto.getCedula())){
+				existeEnLista = true;
+				break;
+			}
+		}
+		if(existeEnLista == false){
+			contactos.add(contacto);
+		}
+	}
+}

@@ -1,0 +1,19 @@
+package com.cmc.test;
+
+import com.cmc.entidades.Contacto;
+import com.cmc.entidades.Telefono;
+
+public class TestContacto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Contacto contacto = new Contacto("1751592465","Daniel","Delgado");
+		Contacto contacto2 = new Contacto("1865484844","Lizbeth","Escobar");
+		
+		Telefono telf1 = new Telefono("movi","0985621345");
+		contacto.agregarTelefono(telf1);
+		
+		System.out.println(contacto.toString());
+	}
+
+}

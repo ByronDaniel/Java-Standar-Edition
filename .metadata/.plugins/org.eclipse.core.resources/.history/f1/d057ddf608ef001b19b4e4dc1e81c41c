@@ -1,0 +1,14 @@
+package clearminds.cuentas.test;
+
+import clearminds.cuentas.Cuenta;
+
+public class TestCuenta {
+
+	public static void main(String[] args) {
+		Cuenta cuenta1 = new Cuenta("03476");
+		cuenta1.setSaldo(675);
+		
+		Cuenta cuenta2 = new Cuenta("03541","C",98);
+	}
+
+}

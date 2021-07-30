@@ -1,0 +1,5 @@
+package com.cmc.calificaciones.entidades;
+
+public class Estudiante {
+
+}

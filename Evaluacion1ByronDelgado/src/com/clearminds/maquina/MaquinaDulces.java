@@ -19,17 +19,13 @@ public class MaquinaDulces {
 	}
 
 	public void mostrarConfiguracion() {
-		Celda celda;
-		for (int i = 0; i < celdas.size(); i++) {
-			celda = celdas.get(i);
+		for (Celda celda : celdas) {
 			System.out.println("CELDA:" + celda.getCodigo());
 		}
 	}
 
 	public Celda buscarCelda(String codigoCelda) {
-		Celda celda;
-		for (int i = 0; i < celdas.size(); i++) {
-			celda = celdas.get(i);
+		for (Celda celda : celdas) {
 			if (celda.getCodigo().equals(codigoCelda)) {
 				return celda;
 			}
@@ -43,9 +39,7 @@ public class MaquinaDulces {
 	}
 
 	public void mostrarProductos() {
-		Celda celda;
-		for (int i = 0; i < celdas.size(); i++) {
-			celda = celdas.get(i);
+		for (Celda celda : celdas) {
 			if (celda.getProducto() != null) {
 				System.out.println("Celda:" + celda.getCodigo() + " Stock:" + celda.getStock() + " Producto:"
 						+ celda.getProducto().getNombre() + " Precio:" + celda.getProducto().getPrecio());
@@ -72,9 +66,7 @@ public class MaquinaDulces {
 	}
 
 	public Celda buscarCeldaProducto(String codigoProducto) {
-		Celda celda;
-		for (int i = 0; i < celdas.size(); i++) {
-			celda = celdas.get(i);
+		for (Celda celda : celdas) {
 			if (celda.getProducto() != null) {
 				if (celda.getProducto().getCodigo().equals(codigoProducto)) {
 					return celda;
@@ -119,9 +111,7 @@ public class MaquinaDulces {
 
 	public ArrayList<Producto> buscarMenores(double limite) {
 		ArrayList<Producto> productosMenores = new ArrayList<Producto>();
-		Celda celda;
-		for (int i = 0; i < celdas.size(); i++) {
-			celda = celdas.get(i);
+		for (Celda celda : celdas) {
 			if (celda.getProducto() != null) {
 				if (celda.getProducto().getPrecio() <= limite) {
 					productosMenores.add(celda.getProducto());

@@ -1,0 +1,23 @@
+package com.cmc.repaso.test;
+
+import com.cmc.repaso.entidades.Item;
+
+public class TestItem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Item item = new Item();
+		System.out.println("**********VALORES INICIALES*********");
+		item.imprimir();
+		
+		System.out.println("**********PRODUCTOS ACTUALES*********");
+		item.setProductosActuales(20);
+		item.imprimir();
+		
+		System.out.println("**********VENDER*********");
+		item.vender(10);
+		item.imprimir();
+	}
+	
+
+}

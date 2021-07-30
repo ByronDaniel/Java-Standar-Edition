@@ -1,0 +1,9 @@
+package com.cmd.flujo.test;
+
+import com.cmc.flujo.Validator;
+
+public class TestValidator {
+	Validator validator = new Validator();
+	validator.validarEdad(18);
+	
+}

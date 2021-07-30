@@ -1,0 +1,8 @@
+package com.cmc.excepciones;
+
+public class TestCuentas {
+	public static void main(String[] args) {
+		Cuenta c = new Cuenta();
+		c.retirar(100);
+	}
+}

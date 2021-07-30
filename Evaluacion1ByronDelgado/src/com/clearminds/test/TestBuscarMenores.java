@@ -29,9 +29,7 @@ public class TestBuscarMenores {
 		
 		// Mostrar en consola los productos menores a 0.50
 		ArrayList<Producto> productosMenores = maquina.buscarMenores(0.50);
-		Producto o ;
-		for(int i = 0; i<productosMenores.size();i++){
-			o = productosMenores.get(i);
+		for(Producto o : productosMenores ){
 			System.out.println(o.getNombre()+" Precio:"+o.getPrecio());
 		}
 

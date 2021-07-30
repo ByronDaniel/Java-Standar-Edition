@@ -1,0 +1,29 @@
+package com.cmc.archivos;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class ManejadorArchivos {
+	private String rutaArchivo;
+	private Logger logger = LogManager.getLogger(ManejadorArchivos.class);
+	
+	public ManejadorArchivos(String rutaArchivo){
+		this.rutaArchivo = rutaArchivo;
+	}
+	
+	public void leer(){
+		File file = new File(rutaArchivo);
+		try {
+			FileReader fileReader = new FileReader(file);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			logger.error("Error al leer el archivo",e);
+		}			
+		
+	}
+}
